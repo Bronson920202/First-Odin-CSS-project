@@ -9,9 +9,10 @@ body {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100%;
+    height: 100vh;
     margin-left: 230px;
     margin-right: 230px;
+    background-color: black;
     
    
     
@@ -124,10 +125,50 @@ ul {
     flex: 1 1 auto;
     display: flex;
     background-color: #e5e7eb;
+    justify-content: center;
+    align-items: center;
+}
+.mid .text {
+    font-size: 36px;
+    font-style: italic;
+    padding-left: 50px;
+    padding-right: 50px;
 } 
-.action {
+
+.bottom {
     flex: 1 1 auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.action-box {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+    background-color: #3882f6;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 6px;
+    gap: 100px;
+}
+.action-box button {
+    border-style: solid;
+    border-color: white;
+    align-self: stretch;
+
+}
+.action-box h3 {
+    flex: 1 1 auto;
+}
+.action-box p {
+    flex: 1 1 auto;
+    
 }
 
 
@@ -135,6 +176,12 @@ ul {
 /*footer*/
 .footer {
 flex: 1 0 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #1F2937;
+min-height: 100px;
+color: white;
 }
 
 
