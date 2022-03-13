@@ -9,7 +9,7 @@ body {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 100%;
     margin-left: 230px;
     margin-right: 230px;
     
@@ -17,10 +17,9 @@ body {
     
 
 }
-h1 {
-    color: white;
-}
 
+/*--------------------------------*/
+/*Header*/
 .header {
     background-color: #1F2937;
     flex: 1 1 auto;
@@ -82,13 +81,15 @@ ul {
     align-items: flex-start;
     gap: 8px;
 }
-
+/*--------------------------------*/
+/*Content*/
 .content {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     justify-content: space-evenly;
     min-height: 800px;
+    min-width: 800px;
 }
 
 .top {
@@ -98,9 +99,15 @@ ul {
     background-color: white;
     flex-direction: column;
 }
-.top .text-box {
-    flex: 1 1 auto;
+.text-box h1 {
     
+    color: black;
+    
+}
+.text-box {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
 }
 .top img {
     border-style: solid;
@@ -123,12 +130,16 @@ ul {
     display: flex;
 }
 
+
+/*--------------------------------*/
+/*footer*/
 .footer {
 flex: 1 0 800px;
 }
 
 
-
+/*--------------------------------*/
+/*Tag selectors*/
 img {
     max-width: 300px;
     max-height: 200px;
@@ -139,6 +150,7 @@ img {
 
 h1 {
     margin: 0px;
+    color: white;
 }
 
 ul {
