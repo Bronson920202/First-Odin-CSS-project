@@ -25,6 +25,9 @@ body {
     background-color: #1F2937;
     flex: 1 1 auto;
     color: white;
+    min-height: 600px;
+    padding-left: 100px;
+    padding-right: 100px;
     
 
 }
@@ -34,8 +37,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 100px;
-    padding-right: 100px;
     
 }
 
@@ -44,6 +45,7 @@ body {
     justify-content: flex-end;
     flex: 0 0 50%;
     order: -1;
+    margin-bottom: 100px;
     
 }
 
@@ -53,6 +55,7 @@ ul {
     justify-content: flex-end;
     gap: 20px;
     color: white;
+
     
 }
 
@@ -60,6 +63,7 @@ ul {
 .header-logo {
     flex: 0 0 50%;
     order: -2;
+    font-size: 24px;
 }
 
 .header-image {
@@ -71,16 +75,24 @@ ul {
 }
 .header-image img {
     flex-grow: 1;
+    object-fit: fill;
+    max-height: inherit;
 }
 
 .sign-up-container {
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-direction: column;
     flex: 0 0 50%;
     order: 1;
     display: flex;
     align-items: flex-start;
     gap: 8px;
+    font-size: 30px;
+}
+.sign-up-container button {
+    width: 125px;
+    height: 35px;
+    border-radius: 10px;
 }
 /*--------------------------------*/
 /*Content*/
@@ -99,16 +111,21 @@ ul {
     justify-content: space-around;
     background-color: white;
     flex-direction: column;
+    min-height: 600px;
 }
-.text-box h1 {
+.text-box p {
     
     color: black;
+    font-size: 50px;
+    
     
 }
 .text-box {
     flex: 0 1 auto;
     display: flex;
     justify-content: center;
+    font-weight: bolder;
+
 }
 .top img {
     border-style: solid;
@@ -119,7 +136,8 @@ ul {
 }
 .top-images {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px
 }
 .mid {
     flex: 1 1 auto;
@@ -127,13 +145,18 @@ ul {
     background-color: #e5e7eb;
     justify-content: center;
     align-items: center;
+    min-height: 600px;
 }
 .mid .text {
     font-size: 36px;
     font-style: italic;
-    padding-left: 50px;
-    padding-right: 50px;
-} 
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.mid .text strong {
+    margin-left: 650px;
+}
 
 .bottom {
     flex: 1 1 auto;
@@ -141,6 +164,7 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: white;
+    min-height: 500px;
 }
 
 .action-box {
@@ -151,23 +175,32 @@ ul {
     justify-content: space-around;
     margin: 40px;
     background-color: #3882f6;
-    padding: 30px;
+    padding: 60px;
     padding-left: 100px;
     padding-right: 100px;
-    border-radius: 6px;
+    border-radius: 16px;
     gap: 100px;
 }
 .action-box button {
     border-style: solid;
     border-color: white;
     align-self: stretch;
+    font-size: 20px;
+    height: 45px;
+    width: 130px;
+    border-radius: 16px;
+    margin-top: 50px
 
 }
 .action-box h3 {
     flex: 1 1 auto;
+    color: white;
+    font-size: 50px;
 }
 .action-box p {
     flex: 1 1 auto;
+    color: white;
+    font-size: 36px;
     
 }
 
